@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="ace.css">
+<title>ACE in Action</title>
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 70px;
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+    }
+</style>
+<h1 id="title"> DMD - Spike1 - Python</h1>
+</head>
+<h3 id="whichEditor"> ACE </h3>
+<body>
+
+<div id="editor">def my_function():
+  	print("Hello from a function")
+</div>
+
+    
+<script src="ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/python");
+</script>
+
+
+<script type="text/javascript">
+	//Function to extract code
+	var myFunction = function(){
+		var code = editor.getValue();
+    	window.alert(code);
+    	document.write('<input type="hidden" name="theCode" value="'+code+'"/>');
+    	//NEED TO STORE CODE AND PUT INTO PYTHON FILE - exec_python.py 
+	}
+</script>
+
+<form action="/action_page.php" method="post"></form> 
+
+
+</body>
+<button href="?run=true" onclick="myFunction()" type="button">Compile! </button>
+</html>
