@@ -1,29 +1,27 @@
-/*styleSheet*/
-
 body{
-  background-color: #162537;
-  margin: 0em 4em 1em 4em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color:	#162537;
+	margin:			0em 4em 1em 4em;
+	font-family:		"Trebuchet MS", Helvetica, sans-serif;
 }
 
 button{
-	background-color: red;
-	position: absolute;
-	padding: 10px 22px;
-	font-size: 14px;
-	bottom: 0;
-	left: 45%
+	background-color:	red;
+	position:		absolute;
+	padding:		10px 22px;
+	font-size:		14px;
+	bottom:			0;
+	left:			45%
 }
 
 h1{
-	color: white;
-	position: absolute;
-	left: 35%;
+	color:		white;
+	position:	absolute;
+	left:		35%;
 }
 
 h3{
-	position: absolute;
-	color: white;
+	position:	absolute;
+	color:		white;
 
 }
 
