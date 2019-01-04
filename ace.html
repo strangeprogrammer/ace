@@ -12,7 +12,9 @@
 				left:		50px;
 			}
 		</style>
-		<script src="backend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ace.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/client/dialog/xhr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/client/dialog/runcode.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<h3 id="whichEditor"> ACE </h3>
@@ -22,33 +24,12 @@
 	print("Hello from a function")
 </div>
 		
-		<script src="ace.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			var editor = ace.edit("editor");
 			editor.setTheme("ace/theme/monokai");
 			editor.session.setMode("ace/mode/python");
 		</script>
 		
-		<script type="text/javascript">
-			//Function to extract code
-			var runit=function(){
-				var code=editor.getValue();
-				var formData=new FormData();
-				var codeBlob=new Blob([code],{type:"text/plain"});
-				console.log("codeblob:\n"+
-					"size: "+codeBlob.size+"\n"+
-					"type: "+codeBlob.type+"\n");
-				formData.set("code",codeBlob,"thefile");
-				
-				console.log("Sending:\n"+
-					code);
-				
-				httpPostAsync("./echoFile.php",function(responseText){
-					console.log("Response:\n"
-						+responseText+"\n");
-				},formData);
-			}
-		</script>
 		<button onclick="runit()" type="button">Run!</button>
 	</body>
 </html>

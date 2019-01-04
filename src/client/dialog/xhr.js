@@ -22,4 +22,4 @@ function httpPostAsync(url,callback,data){
 	requestAsync("POST",url,callback,data);
 }
 
-console.log("'backend.js' loaded successfully.")
+console.log("'xhr.js' loaded successfully.")
