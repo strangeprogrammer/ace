@@ -1,3 +1,5 @@
+//Depends upon 'src/client/console_hook/hook.js'
+
 //Taken (with love) from
 //	https://stackoverflow.com/a/4033310
 //and
@@ -22,4 +24,4 @@ function httpPostAsync(url,callback,data){
 	requestAsync("POST",url,callback,data);
 }
 
-console.log("'xhr.js' loaded successfully.")
+loadSuccess("src/client/dialog/xhr.js");
