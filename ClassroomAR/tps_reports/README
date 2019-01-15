@@ -1,0 +1,16 @@
+I re-did the tps report to make it a little easier to complete. 
+
+To change/add the date, title, or project name:
+	 Insert->Headers and Footers...
+
+To select who completed task:
+	Highlight initial-> Ctrl+B, Ctrl+U
+
+To select percent complete:
+	Highlight percent completed-> Ctrl+B, Ctrl+U
+
+To add more rows:
+	Create another report from blank and change the footer to page++ (This is for printing purposes)
+
+For printing:
+	File->Export as PDF...
