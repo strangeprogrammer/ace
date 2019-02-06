@@ -1,0 +1,12 @@
+﻿Speaking Points
+
+Background:
+-Lecture halls at Universities in the nation are looking to find a purpose in the Internet world.
+-Implement the concept of multi-view displays through the use of an augmented reality presentation tool (ARPT) designed to enhance the student experience in large lecture classrooms.
+
+
+
+Design:
+- Originally from Mozilla, A-Frame was developed to be an easy but powerful way to develop VR content. As an independent open source project, A-Frame has grown to be one of the largest and most welcoming VR communities.
+-AR.js runs 100% in your web browser, which means there is no app to install. There is also no need for a specific device, it runs on all mobile platforms: android, iOS11, and windows mobile
+-This gives the option to generate a 2D barcode(matrix) or a Pictorial one 
